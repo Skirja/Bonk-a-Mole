@@ -1,0 +1,71 @@
+body {
+    background-color: #FF999E;
+}
+
+main {
+    display: flex;
+    height: 83vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* H1 */
+main h1 {
+    font-size: 5rem;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 57% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    55% { border-color: #FF4751 }
+}
+
+main h1 {
+    color: #000;
+    font-family: inherit;
+    overflow: hidden;
+    border-right: .10em solid #FF4751;
+    white-space: nowrap;
+    letter-spacing: .11em;
+    animation: 
+    typing 2s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+/* H1 END */
+
+/* BUTTON */
+main button {
+    padding: 2vh 6vw;
+    border: none;
+    background-color: #FF7077;
+    border-radius: 25px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: #000;
+    animation: show 3s ease forwards;
+    border-bottom: 4px solid #FF4751;
+    transition: 0.3s;
+    box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes show {
+    0% {
+      opacity: 0; /* Tampilkan layer pada awal animasi */
+    }
+    100% {
+      opacity: 1; /* Sembunyikan layer pada akhir animasi */
+    }
+}
+
+button:hover {
+    box-shadow: 0 0 rgba(0, 0, 0, 0.4);
+    border-bottom-width: 2px;
+    transform: translateY(2px);
+    cursor: pointer;
+}
+/* BUTTON END */
