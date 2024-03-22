@@ -4,3 +4,21 @@ body {
     font-weight: 700;
     margin: 0;
 }
+
+@media (min-width: 768px) {
+    #contentFalse {
+      display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    #contentTrue {
+      display: none;
+    }
+
+    #contentFalse {
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 30%;
+    }
+}

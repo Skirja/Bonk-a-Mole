@@ -2,11 +2,21 @@ body {
     background-color: #FF999E;
 }
 
-/* button */
-main {
-    margin-top: 3.5vh;
+/* header */
+header {
+    display: flex;
+    flex-direction: row-reverse;
 }
 
+header a {
+    text-decoration: none;
+    margin: 1vh 1vw;
+    color: #9a84485b;
+    font-size: 8px;
+}
+/* header end */
+
+/* button */
 main .btn-play {
     display: block;
     margin: 4vh auto 0px;
